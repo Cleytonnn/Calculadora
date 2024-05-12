@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Indice de Massa Corporal</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="calculadoraImc.js"></script>
+</head>
+
+<body>
+
+<h1>Calculadora de IMC</h1>
+<h2>Está Calculadora tem o Objetivo de Calcular seu  indice de Massa Corporal (IMC)</h2>
+
+<img src="css/peso-escalada.jpg" width="50%" height="50%">
+<form>
+<fieldset id="Peso">
+    <legend>Calcule seu Peso Aqui!</legend>
+    <p>Peso: <input type="number" step="0.1" id="kg" min="0" max="999" placeholder="Digite Seu Peso Aqui!"> </p>
+</fieldset>
+
+<fieldset id="cAltura"><legend>Digite sua Altura!</legend>
+    <p>Altura: <input type="number" min="0" step="0.1" id="alt" placeholder="Digite sua Altura Aqui!"/></p>
+
+    <p><input onClick="calcular()" type="button" value="Calcular" name="botao">
+    <input type="reset" value="Limpar"></p>
+</fieldset>
+</form>
+</body>
+
+</html>
