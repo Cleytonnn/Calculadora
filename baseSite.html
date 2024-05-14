@@ -11,22 +11,23 @@
 <body>
 
 <h1>Calculadora de IMC</h1>
+<br><br>
 <h2>Está Calculadora tem o Objetivo de Calcular seu  indice de Massa Corporal (IMC)</h2>
 
-<img src="css/peso-escalada.jpg" width="50%" height="50%">
 <form>
-<fieldset id="Peso">
-    <legend>Calcule seu Peso Aqui!</legend>
-    <p>Peso: <input type="number" step="0.1" id="kg" min="0" max="999" placeholder="Digite Seu Peso Aqui!"> </p>
-</fieldset>
-
-<fieldset id="cAltura"><legend>Digite sua Altura!</legend>
-    <p>Altura: <input type="number" min="0" step="0.1" id="alt" placeholder="Digite sua Altura Aqui!"/></p>
-
-    <p><input onClick="calcular()" type="button" value="Calcular" name="botao">
-    <input type="reset" value="Limpar"></p>
-</fieldset>
+    <div class="container">
+        <div class="primeiPasso"></div>
+        <hr>
+        <label for="peso">Digite seu Peso:</label>
+        <input type="number" placeholder="Seu peso" id="peso">
+        <br><br>
+        <label for="Altura">Digite sua Altura:</label>
+        <input type="number" placeholder="Sua Altura" id="Altura">
+        <br><br>
+        <button>Calcular</button>
+</div>
 </form>
+
 </body>
 
 </html>
